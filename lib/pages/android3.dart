@@ -5,6 +5,8 @@ import 'dart:ui';
 import 'package:traveleasy/utils.dart';
 
 class Scene3 extends StatelessWidget {
+  static const String android3 = 'android3';
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;

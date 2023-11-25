@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 
 class Scene1 extends StatelessWidget {
+  static const String android1 = 'android1';
+
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -10,8 +13,8 @@ class Scene1 extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 900,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+      padding: EdgeInsets.fromLTRB(0*fem,100*fem, 0*fem, 0*fem),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           width: 360,
@@ -151,21 +154,21 @@ class Scene1 extends StatelessWidget {
               Positioned(
                 left: 122,
                 top: 490,
-                child: SizedBox(
-                  width: 139,
-                  height: 35,
-                  child: Text(
-                    'Sign up',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 32,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
+                  child: SizedBox(
+                    width: 139,
+                    height: 35,
+                    child: Text(
+                      'Sign up',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 32,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                      ),
                     ),
                   ),
                 ),
-              ),
               Positioned(
                 left: 63.71,
                 top: 56.92,
@@ -210,7 +213,7 @@ class Scene1 extends StatelessWidget {
           ),
         ),
       ],
-    ),
+        ),
     );
   }
 }

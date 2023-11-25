@@ -18,11 +18,20 @@ class MyApp extends StatelessWidget {
 		theme: ThemeData(
 		primarySwatch: Colors.blue,
 		),
-		home: Scaffold(
-		body: SingleChildScrollView(
-			child: Scene1(),
-		),
-		),
+    initialRoute: Scene2.android2,
+			routes: {
+			  Scene1.android1: (context) => Scene1(),
+				Scene2.android2: (context) => Scene2(),
+				Scene3.android3: (context) => Scene3(),
+				Scene4.android4: (context) => Scene4(),
+
+			}
+			/*home: Scaffold(
+				body: SingleChildScrollView(
+					child: Scene1(),
+				),
+			),
+			 */
 	);
 	}
 }

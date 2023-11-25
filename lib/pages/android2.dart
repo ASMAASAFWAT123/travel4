@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:traveleasy/utils.dart';
 
 class Scene2 extends StatelessWidget {
+  static const String android2 = 'android2';
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -14,7 +16,7 @@ class Scene2 extends StatelessWidget {
       width: double.infinity,
       child: Container(
         // android2MN2 (8:103)
-        padding: EdgeInsets.fromLTRB(39*fem, 410*fem, 15*fem, 33*fem),
+        padding: EdgeInsets.fromLTRB(39*fem, 350*fem, 15*fem, 33*fem),
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xff0056ff),
@@ -207,7 +209,7 @@ class Scene2 extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
+            /*Container(
               // dontyouhaveaccount6wC (25:49)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 46*fem, 0*fem),
               child: Text(
@@ -217,6 +219,21 @@ class Scene2 extends StatelessWidget {
                   fontSize: 20*ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.2125*ffem/fem,
+                  color: Color(0xffffffff),
+                ),
+              ),
+            ),
+
+             */
+            ElevatedButton(
+              onPressed: () {Navigator.pushNamed(context, 'android1');},
+              child: const Text(
+              'Don’t you have account?',
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  height: 1.2125,
                   color: Color(0xffffffff),
                 ),
               ),
